@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicial - Coin Convert</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/icon.png">
+</head>
+<body>
+    <div class="banner">
+        <div class="header">
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo">
+                        <img src="assets/icon.png">
+                        <h1>Coin Convert</h1>
+                    </div>
+                </div>
+                <div class="frase">
+                    <h1>Bem-vindo ao Coin Convert venha converter a sua moeda aqui!</h1>
+                    <img src="assets/seta.gif">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body">
+        <div class="container">
+            <div class="box">
+                <div class="title">
+                    <h1>Conversor</h1>
+                </div>
+                <label for="price">Valor:</label>
+                <input type="text" id="price" placeholder="Digíte o valor" autofocus>
+                <label for="coin1">Moeda:</label>
+                <select id="coin1">
+                    <option value="">--Selecione uma opção</option>
+                    <option value="R$">Real</option>
+                    <option value="$">Dolar</option>
+                    <option value="€">Euro</option>
+                </select>
+                <label for="coin2">Câmbio:</label>
+                <select id="coin2">
+                    <option value="">--Selecione uma opção</option>
+                    <option value="real">Real</option>
+                    <option value="dolar">Dolar</option>
+                    <option value="euro">Euro</option>
+                </select>
+                <div class="resposta">
+                    <h2 id="cifrao"></h2>
+                    <h2 id="valor">00.00</h2>
+                </div>
+                <button onclick="calcular()">Converter</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="main.js"></script>
